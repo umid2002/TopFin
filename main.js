@@ -31,5 +31,42 @@ document.querySelector(".request-close").addEventListener("click", () => {
 })
 
 
+// Main Modal start
 
+document.querySelector(".main-btn").addEventListener("click", () => {
+  document.querySelector(".main-popup").style.display = "block";
+})
+document.querySelector(".main-popup__close").addEventListener("click", () => {
+  document.querySelector(".main-popup").style.display = "none";
+})
   
+// Offer Modal Start
+
+document.querySelectorAll(".offer-content").forEach(card => {
+  card.querySelector(".offer-about__btn").addEventListener("click", () => {
+    document.querySelector(".offer-popup").style.display = "block";
+    const elOfferTitle = card.querySelector(".offer-about__title")
+    const elOfferSubtitle = card.querySelector(".offer-about__subtitle");
+    document.querySelector(".offer-popup__title").textContent = elOfferTitle.textContent
+    document.querySelector(".offer-popup__subtitle").textContent = elOfferSubtitle.textContent
+  })
+})
+document.querySelector(".offer-popup__close").addEventListener("click", () => {
+  document.querySelector(".offer-popup").style.display = "none"
+})
+document.querySelector(".offer-back").addEventListener("click", () => {
+  document.querySelector(".offer-popup").style.display = "none"
+})
+
+
+// Offer More Modal
+
+document.querySelector(".offer-content__more-btn").addEventListener("click", () => {
+  document.querySelector(".popup-more").style.display = "block";
+})
+document.querySelector(".more-close").addEventListener("click", () => {
+  document.querySelector(".popup-more").style.display = "none";
+})
+document.querySelector(".more-bg").addEventListener("click", () => {
+  document.querySelector(".popup-more").style.display = "none";
+})
