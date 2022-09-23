@@ -1,8 +1,7 @@
 document.querySelectorAll(".banner-content").forEach((content) => {
   content.onclick = () => {
-    document.querySelector(".popup-content").style.display = "block";
     const elPopupImg = document.querySelector(".popup-img");
-    const elPopulTitle = document.querySelector(".popup-title");
+    const elPopulTitle = document.querySelector(".modal-title");
     const elContent = content.querySelector("img");
     const elContentTitle = content.querySelector(".banner-title");
     elPopupImg.src = elContent.getAttribute("src");
@@ -10,63 +9,47 @@ document.querySelectorAll(".banner-content").forEach((content) => {
     elPopulTitle.textContent = elContentTitle.textContent
   };
 });
-const elClose = document.querySelector(".popup-close").addEventListener("click", () => {
-  document.querySelector(".popup-content").style.display = "none";
-})
-const elPopupClose = document.querySelector(".popup-back").addEventListener("click", () => {
-  document.querySelector(".popup-content").style.display = "none";
-  document.querySelector(".popup-request").style.display = "none";
-})
-
-// Request Cards
-
-document.querySelector(".popup-contact").addEventListener("click", () => {
-  document.querySelector(".popup-request").style.display = "block";
-  document.querySelector(".popup-content").style.display = "none";
-})
-document.querySelector(".request-close").addEventListener("click", () => {
-  document.querySelector(".popup-request").style.display = "none";
-  document.querySelector(".popup-content").style.display = "none";
-  document.querySelector(".popup-content").style.display = "none";
-})
 
 
-// Main Modal start
 
-document.querySelector(".main-btn").addEventListener("click", () => {
-  document.querySelector(".main-popup").style.display = "block";
-})
-document.querySelector(".main-popup__close").addEventListener("click", () => {
-  document.querySelector(".main-popup").style.display = "none";
-})
+
   
 // Offer Modal Start
 
 document.querySelectorAll(".offer-content").forEach(card => {
-  card.querySelector(".offer-about__btn").addEventListener("click", () => {
-    document.querySelector(".offer-popup").style.display = "block";
+  card.querySelector(".offer-about__btn-more").addEventListener("click", () => {
     const elOfferTitle = card.querySelector(".offer-about__title")
     const elOfferSubtitle = card.querySelector(".offer-about__subtitle");
+    const elOfferImg = card.querySelector(".offer-img")
     document.querySelector(".offer-popup__title").textContent = elOfferTitle.textContent
     document.querySelector(".offer-popup__subtitle").textContent = elOfferSubtitle.textContent
+    document.querySelector(".offer-popup__img").src = elOfferImg.getAttribute("src")
+    document.querySelector(".offer-popup__img").srcset = elOfferImg.getAttribute("srcset")
+    console.log("wolf");
   })
 })
-document.querySelector(".offer-popup__close").addEventListener("click", () => {
-  document.querySelector(".offer-popup").style.display = "none"
+
+const elSelectOffice = document.querySelector(".footer-map__office"),
+      elSelectFactory = document.querySelector(".footer-map__factory"),
+      elMapOffice = document.querySelector(".map-office"),
+      elMapFactory = document.querySelector(".map-factory");
+
+elSelectOffice.addEventListener("click", ()=> {
+  elMapFactory.style.display = "none"
+  elMapOffice.style.display = "block"
+  elSelectFactory.classList.remove("active")
+  elSelectOffice.classList.add("active")
 })
-document.querySelector(".offer-back").addEventListener("click", () => {
-  document.querySelector(".offer-popup").style.display = "none"
+elSelectFactory.addEventListener("click", () => {
+  elMapFactory.style.display = "block";
+  elMapOffice.style.display = "none";
+  elSelectOffice.classList.remove("active")
+  elSelectFactory.classList.add("active")
 })
+ 
+ 
 
 
-// Offer More Modal
 
-document.querySelector(".offer-content__more-btn").addEventListener("click", () => {
-  document.querySelector(".popup-more").style.display = "block";
-})
-document.querySelector(".more-close").addEventListener("click", () => {
-  document.querySelector(".popup-more").style.display = "none";
-})
-document.querySelector(".more-bg").addEventListener("click", () => {
-  document.querySelector(".popup-more").style.display = "none";
-})
+
+ 

@@ -7,13 +7,32 @@
     <title>My Website</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="./assests/fontawesome/css/brands.css" />
+    <link rel="stylesheet" href="assests/fontawesome/css/fontawesome.css" />
+    <link rel="stylesheet" href="./assests/fontawesome/css/solid.css" />
+    <!-- swiper css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <!-- main css -->
     <link rel="stylesheet" href="./assests/css/main.css" />
   </head>
   <body>
     <main>
-
       <!-- Header -->
       <header>
+        <div class="header-bg"></div>
         <div class="container">
           <nav class="navbar">
             <div class="nav-left">
@@ -64,89 +83,298 @@
       <!-- Banner Section -->
       <section class="banner">
         <div class="container-fluid">
-          <div class="banner-content">
-            <img
-              src="./assests/img/Rectangle 8@1x-1.jpg"
-              srcset="
-                ./assests/img/Rectangle@1x-1.jpg 1x,
-                ./assests/img/Rectangle@2x-1.jpg 2x
-              "
-              alt="banner image"
-            />
-            <h2 class="banner-title">Сертификационный орган</h2>
-            <button class="banner-button">Подробнее</button>
+          <div class="banner-box">
+            <div class="banner-content col-4">
+              <img
+                class="banner-img"
+                src="./assests/img/Rectangle 8@1x-1.jpg"
+                srcset="
+                  ./assests/img/Rectangle@1x-1.jpg 1x,
+                  ./assests/img/Rectangle@2x-1.jpg 2x
+                "
+                alt="banner image"
+              />
+              <h2 class="banner-title">Сертификационный орган</h2>
+              <button
+                class="banner-button"
+                data-bs-toggle="modal"
+                href="#exampleModalToggle"
+                role="button"
+              >
+                Подробнее
+              </button>
+            </div>
+            <div class="banner-content col-4">
+              <img
+                class="banner-img"
+                src="./assests/img/Rectangle-2@1x-2.jpg"
+                srcset="
+                  ./assests/img/Rectangle-2@1x-2.jpg 1x,
+                  ./assests/img/Rectangle-2@2x-2.jpg 2x
+                "
+                alt="banner image"
+              />
+              <h2 class="banner-title">Аккредитованная лаборатория</h2>
+              <button
+                class="banner-button"
+                data-bs-toggle="modal"
+                href="#exampleModalToggle"
+                role="button"
+              >
+                Подробнее
+              </button>
+            </div>
+            <div class="banner-content col-4">
+              <img
+                class="banner-img"
+                src="./assests/img/Rectangle-3@1x.jpg"
+                srcset="
+                  ./assests/img/Rectangle-3@1x.jpg 1x,
+                  ./assests/img/Rectangle-3@2x.jpg 2x
+                "
+                alt="banner image"
+              />
+              <h2 class="banner-title">Геология и Гидрогеология</h2>
+              <button
+                class="btn-w banner-button"
+                data-bs-toggle="modal"
+                href="#exampleModalToggle"
+                role="button"
+              >
+                Подробнее
+              </button>
+            </div>
           </div>
-          <div class="banner-content">
-            <img
-              src="./assests/img/Rectangle-2@1x-2.jpg"
-              srcset="
-                ./assests/img/Rectangle-2@1x-2.jpg 1x,
-                ./assests/img/Rectangle-2@2x-2.jpg 2x
-              "
-              alt="banner image"
-            />
-            <h2 class="banner-title">Аккредитованная лаборатория</h2>
-            <button class="banner-button">Подробнее</button>
-          </div>
-          <div class="banner-content">
-            <img
-              src="./assests/img/Rectangle-3@1x.jpg"
-              srcset="
-                ./assests/img/Rectangle-3@1x.jpg 1x,
-                ./assests/img/Rectangle-3@2x.jpg 2x
-              "
-              alt="banner image"
-            />
-            <h2 class="banner-title">Геология и Гидрогеология</h2>
-            <button class="banner-button">Подробнее</button>
-          </div>
-        </div>
-        <div class="popup-content">
-          <div class="popup-back"></div>
-          <div class="popup-card">
-            <img
-              class="popup-img"
-              src=".//img/Rectangle 8@1x-1.jpg"
-              srcset="
-                ./assests/img/Rectangle@1x-1.jpg 1x,
-                ./assests/img/Rectangle@2x-1.jpg 2x
-              "
-              alt="banner image"
-            />
-            <h2 class="popup-title">Сертификационный орган</h2>
-            <p class="popup-subtitle">
-              Центр по сертификации электротехнических, полимерных, строительных
-              и металлических изделий оказывают услуги по проведению различных
-              испытаний, выдаче сертификатов соответствия. В область
-              аккредитации аккредитованной испытательной лаборатории и
-              аккредитованного органа по сертификации продукции входят более
-              1000 наименований продукции.
-            </p>
-            <button class="popup-contact">Связаться с нами</button>
-            <button class="popup-apply">Подать заявку</button>
-            <span class="popup-close">&times;</span>
-            <img
-              class="popup-back-img"
-              src="./assests/img/Banner@1x.png"
-              srcset="
-                ./assests/img/Banner@1x.png 1x,
-                ./assests/img/Banner@2x.png 2x
-              "
-              alt="banner-back-img"
-            />
-          </div>
-        </div>
+          <div class="swiper banner-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide banner-content">
+                <img
+                  class="banner-img"
+                  src="./assests/img/Rectangle 8@1x-1.jpg"
+                  srcset="
+                    ./assests/img/Rectangle@1x-1.jpg 1x,
+                    ./assests/img/Rectangle@2x-1.jpg 2x
+                  "
+                  alt="banner image"
+                />
+                <h2 class="banner-title">Сертификационный орган</h2>
+                <button
+                  class="banner-button"
+                  data-bs-toggle="modal"
+                  href="#exampleModalToggle"
+                  role="button"
+                >
+                  Подробнее
+                </button>
+              </div>
+              <div class="swiper-slide banner-content">
+                <img
+                class="banner-img"
+                src="./assests/img/Rectangle-2@1x-2.jpg"
+                srcset="
+                  ./assests/img/Rectangle-2@1x-2.jpg 1x,
+                  ./assests/img/Rectangle-2@2x-2.jpg 2x
+                "
+                alt="banner image"
+              />
+              <h2 class="banner-title">Аккредитованная лаборатория</h2>
+              <button
+                class="banner-button"
+                data-bs-toggle="modal"
+                href="#exampleModalToggle"
+                role="button"
+              >
+                Подробнее
+              </button>
+              </div>
+              <div class="swiper-slide banner-content">
+                <img
+                class="banner-img"
+                src="./assests/img/Rectangle-3@1x.jpg"
+                srcset="
+                  ./assests/img/Rectangle-3@1x.jpg 1x,
+                  ./assests/img/Rectangle-3@2x.jpg 2x
+                "
+                alt="banner image"
+              />
+              <h2 class="banner-title">Геология и Гидрогеология</h2>
+              <button
+                class="btn-w banner-button"
+                data-bs-toggle="modal"
+                href="#exampleModalToggle"
+                role="button"
+              >
+                Подробнее
+              </button>
+              </div>
+            </div>
 
-        <div class="popup-request">
-          <div class="popup-back"></div>
-          <div class="request-card">
-            <h2 class="request-title">Хотите заказать услугу?</h2>
-            <p class="request-subtitle">Оставьте заявку и мы скоро свяжемся с вами</p>
-            <input placeholder="Имя" type="text" class="request-input" />
-            <input placeholder="Номер телефона" type="text" class="request-input" />
-            <div class="request-buttons">
-              <button class="request-send">Оставить заявку</button>
-              <button class="request-close">Отменить</button>
+            <div class="swiper-button-next banner-next"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="swiper-button-prev banner-prev"><i class="fa-solid fa-arrow-left"></i></div>
+          </div>
+        </div>
+        <!-- Banner Modal One -->
+        <div
+          class="modal fade"
+          id="exampleModalToggle"
+          aria-hidden="true"
+          aria-labelledby="exampleModalToggleLabel"
+          tabindex="-1"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <img
+                  class="popup-img"
+                  src=".//img/Rectangle 8@1x-1.jpg"
+                  srcset="
+                    ./assests/img/Rectangle@1x-1.jpg 1x,
+                    ./assests/img/Rectangle@2x-1.jpg 2x
+                  "
+                  alt="banner image"
+                />
+                <h5
+                  class="modal-title popup-title"
+                  id="exampleModalToggleLabel"
+                >
+                  Modal 1
+                </h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <i class="fa-regular fa-xmark"></i>
+                </button>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+              <div class="modal-body popup-subtitle">
+                Центр по сертификации электротехнических, полимерных,
+                строительных и металлических изделий оказывают услуги по
+                проведению различных испытаний, выдаче сертификатов
+                соответствия. В область аккредитации аккредитованной
+                испытательной лаборатории и аккредитованного органа по
+                сертификации продукции входят более 1000 наименований продукции.
+              </div>
+              <div class="modal-footer">
+                <button
+                  class="btn-g"
+                  data-bs-target="#exampleModalToggle2"
+                  data-bs-toggle="modal"
+                >
+                  Связаться с нами
+                </button>
+                <button
+                  class="btn-w"
+                  data-bs-target="#exampleModalToggle2"
+                  data-bs-toggle="modal"
+                >
+                  Подать заявку
+                </button>
+              </div>
+              <img
+                class="popup-back-img"
+                src="./assests/img/Banner@1x.png"
+                srcset="
+                  ./assests/img/Banner@1x.png 1x,
+                  ./assests/img/Banner@2x.png 2x
+                "
+                alt="banner-back-img"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Banner Modal Two -->
+        <div
+          class="modal fade"
+          id="exampleModalToggle2"
+          aria-hidden="true"
+          aria-labelledby="exampleModalToggleLabel2"
+          tabindex="-1"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-p">
+              <div class="modal-header">
+                <h5
+                  class="modal-title request-title"
+                  id="exampleModalToggleLabel2"
+                >
+                  Хотите заказать услугу?
+                </h5>
+                <p class="request-subtitle">
+                  Оставьте заявку и мы скоро свяжемся с вами
+                </p>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body modal-f">
+                <input placeholder="Имя" type="text" class="request-input" />
+                <input
+                  placeholder="Номер телефона"
+                  type="text"
+                  class="request-input"
+                />
+              </div>
+              <div class="modal-footer request-modal__footer">
+                <button
+                  class="btn-g col-lg-6"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-notification"
+                >
+                  Оставить заявку
+                </button>
+                <button
+                  class="btn-w col-lg-6"
+                  data-bs-target="#exampleModalToggle"
+                  data-bs-toggle="modal"
+                >
+                  Отменить
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Banner Modal Notification -->
+        <div
+          class="modal fade"
+          id="modal-notification"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-body notification-about">
+                <img
+                  src="./assests/img/Notification.jpg"
+                  srcset="
+                    ./assests/img/Notification.jpg    1x,
+                    ./assests/img/Notification@2x.jpg 2x
+                  "
+                  alt="succes icon"
+                />
+                <div class="notif-text">
+                  <h3 class="notif-title">Ваше сообшение успешно отправлено</h3>
+                  <p class="notif-subtitle">
+                    В ближайшее время с вами свяжется наш специалист
+                  </p>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn-w" data-bs-dismiss="modal">
+                  Закрыть
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -154,41 +382,165 @@
 
       <!-- Main Section -->
       <section class="main">
-        <div class="container main-container">
-          <!-- Main left -->
-          <div class="main-left">
-            <img src="./assests/img/Main@1x.jpg" srcset="./assests/img/Main@1x.jpg 1x, ./assests/img/Main@2x.jpg 2x" alt="">
-          </div>
-          <!-- Main right -->
-          <div class="main-right">
-            <h2 class="main-title">О компании</h2>
-            <p class="main-subtitle">Аккредитованный центр по сертификации продукции при ООО "TOPFIN RESULT" создан в 2014 году. Осуществляет сертификацию электротехнического, светового оборудования, строительных, металлических и полимерных изделий, реализуемых на территории Республики Узбекистан.</p>
-            <button class="main-btn btn-w">Подробнее</button>
-            <img class="main-img__mobile" src="./assests/img/Main-mobile@1x.jpg" srcset="./assests/img/Main-mobile@1x.jpg 1x, ./assests/img/Main-mobile@2x.jpg 2x" alt="">
-            <h3 class="main-about">Мы имеем</h3>
-            <div class="main-content">
-              <p class="main-content__year">8 <span>лет опыта</span></p>
-              <p class="main-content__year">80 <span>опытных сотрудников</span></p>
-            </div>
-          </div>
-          <!-- Popup -->
-          <div class="main-popup">
-            <div class="main-popup__back"></div>
-            <div class="main-popup__card">
-              <img class="main-popup__img" src="./assests/img/Main-big@1x.jpg" srcset="./assests/img/Main-big@1x.jpg 1x, ./assests/img/Main-big@2x.jpg 2x"/>
-              <h2 class="main-popup__title">Сертификационный орган</h2>
-              <p class="main-popup__subtitle">
-                Аккредитованный центр по сертификации продукции при ООО "TOPFIN RESULT" создан в 2014 году. Осуществляет сертификацию электротехнического, светового оборудования, строительных, металлических и полимерных изделий, реализуемых на территории Республики Узбекистан.
+        <div class="container">
+          <div class="main-container">
+            <!-- Main left -->
+            <img
+              class="main-img col-lg-6 col-md-12"
+              src="./assests/img/Main@1x.jpg"
+              srcset="
+                ./assests/img/Main@1x.jpg 1x,
+                ./assests/img/Main@2x.jpg 2x
+              "
+              alt=""
+            />
+            <!-- Main right -->
+            <div class="main-right col-lg-6 col-md-12">
+              <h2 class="main-title">О компании</h2>
+              <img class="main-img__second" src="./assests/img/Main-second.jpg" srcset="./assests/img/Main-second.jpg 1x, ./assests/img/Main-second@2x.jpg 2x" alt="">
+              <p class="main-subtitle">
+                Аккредитованный центр по сертификации продукции при ООО "TOPFIN
+                RESULT" создан в 2014 году. Осуществляет сертификацию
+                электротехнического, светового оборудования, строительных,
+                металлических и полимерных изделий, реализуемых на территории
+                Республики Узбекистан.
               </p>
-              <p class="main-popup__subtitle">Уникальность Комплексной испытательной лаборатории заключается в том, что наша лаборатория в кратчайшие сроки и надежно укомплектована электрическим, световым, строительным, испытательным оборудованием для металлических и полимерных изделий, а также испытательным оборудованием. В интегрированной испытательной лаборатории также есть устройства, позволяющие определить количество и плотность почвы. Аналогичных устройств в стране нет.</p>
-              <p class="main-popup__subtitle">Комплекс испытательной лаборатории электротехнической, полимерной, строительной и металлической продукции была аккредитована со стороны агентства «Узстандарт» в 2014 году. Испытательная база и область аккредитации лаборатории располагает широкими возможностями в области испытаний.</p>
-              <p class="main-popup__subtitle">В Комплексе Испытательной Лаборатории проводятся физико-химические, спектрометрические, механические, физико-механические, электротехнические, светотехнические методы анализа в области полимеров, светотехники и электротехники, связанные с качеством продукции, экономией электроэнергии и техникой безопасности, на соответствие требованиям нормативной документации.</p>
-              <p class="main-popup__subtitle">Комплекс Испытательной Лаборатории несет ответственность за правильность проведения испытаний, объективность, достоверность и конфиденциальность предоставленных результатов, сроки проведения испытаний, а также за выполнение соответствующих функций и обязанностей, установленных должностными инструкциями.</p>
-              <p class="main-popup__subtitle">Уникальность Комплекса Испытательной Лаборатории заключается в том что, именно наша лаборатория имеет средства измерения и испытательное оборудование, которые позволяют в кратчайшие сроки и достоверно определить светотехнические параметры осветительных приборов, таких как люминесцентные, светодиодные лампы и лампы накаливания, светильников и прочего осветительного оборудования. Также в комплексе испытательной лаборатории имеется прибор, позволяющий определять количественный и качественный состав всех полимеров. Аналогичных приборов на территории Республики Узбекистан нет.</p>
-              <p class="main-popup__subtitle">В дальнейших планах центр по сертификации планирует войти в состав международных аккредитованных лабораторий ИЛАК – (ILAC – International Laboratory Accreditation Cooperation – Международная организация по аккредитации лабораторий). После признания ИЛАК протоколы, выданные Аккредитованной испытательной лабораторией имеет силу в Европе и СНГ.</p>
-
-              <span class="main-popup__close close">&times;</span>
+              <button
+                class="main-btn btn-w"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#main-modal"
+              >
+                Подробнее
+              </button>
+              <img
+                class="main-img__mobile"
+                src="./assests/img/Main-mobile@1x.jpg"
+                srcset="
+                  ./assests/img/Main-mobile@1x.jpg 1x,
+                  ./assests/img/Main-mobile@2x.jpg 2x
+                "
+                alt=""
+              />
+              <h3 class="main-about">Мы имеем</h3>
+              <div class="main-content">
+                <p class="main-content__year col-6">8 <span>лет опыта</span></p>
+                <p class="main-content__year col-6">
+                  80 <span>опытных сотрудников</span>
+                </p>
+              </div>
             </div>
+          </div>
+        </div>
+
+        <!-- Main Modal -->
+        <div
+          class="modal fade"
+          id="main-modal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog main-modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header main-modal__header">
+                <img
+                  class="main-popup__img"
+                  src="./assests/img/Main-big@1x.jpg"
+                  srcset="
+                    ./assests/img/Main-big@1x.jpg 1x,
+                    ./assests/img/Main-big@2x.jpg 2x
+                  "
+                />
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body main-modal-body">
+                <h2 class="main-popup__title">Сертификационный орган</h2>
+                <p class="main-popup__subtitle">
+                  Аккредитованный центр по сертификации продукции при ООО
+                  "TOPFIN RESULT" создан в 2014 году. Осуществляет сертификацию
+                  электротехнического, светового оборудования, строительных,
+                  металлических и полимерных изделий, реализуемых на территории
+                  Республики Узбекистан.
+                </p>
+                <p class="main-popup__subtitle">
+                  Уникальность Комплексной испытательной лаборатории заключается
+                  в том, что наша лаборатория в кратчайшие сроки и надежно
+                  укомплектована электрическим, световым, строительным,
+                  испытательным оборудованием для металлических и полимерных
+                  изделий, а также испытательным оборудованием. В
+                  интегрированной испытательной лаборатории также есть
+                  устройства, позволяющие определить количество и плотность
+                  почвы. Аналогичных устройств в стране нет.
+                </p>
+                <p class="main-popup__subtitle">
+                  Комплекс испытательной лаборатории электротехнической,
+                  полимерной, строительной и металлической продукции была
+                  аккредитована со стороны агентства «Узстандарт» в 2014 году.
+                  Испытательная база и область аккредитации лаборатории
+                  располагает широкими возможностями в области испытаний.
+                </p>
+                <p class="main-popup__subtitle">
+                  В Комплексе Испытательной Лаборатории проводятся
+                  физико-химические, спектрометрические, механические,
+                  физико-механические, электротехнические, светотехнические
+                  методы анализа в области полимеров, светотехники и
+                  электротехники, связанные с качеством продукции, экономией
+                  электроэнергии и техникой безопасности, на соответствие
+                  требованиям нормативной документации.
+                </p>
+                <p class="main-popup__subtitle">
+                  Комплекс Испытательной Лаборатории несет ответственность за
+                  правильность проведения испытаний, объективность,
+                  достоверность и конфиденциальность предоставленных
+                  результатов, сроки проведения испытаний, а также за выполнение
+                  соответствующих функций и обязанностей, установленных
+                  должностными инструкциями.
+                </p>
+                <p class="main-popup__subtitle">
+                  Уникальность Комплекса Испытательной Лаборатории заключается в
+                  том что, именно наша лаборатория имеет средства измерения и
+                  испытательное оборудование, которые позволяют в кратчайшие
+                  сроки и достоверно определить светотехнические параметры
+                  осветительных приборов, таких как люминесцентные, светодиодные
+                  лампы и лампы накаливания, светильников и прочего
+                  осветительного оборудования. Также в комплексе испытательной
+                  лаборатории имеется прибор, позволяющий определять
+                  количественный и качественный состав всех полимеров.
+                  Аналогичных приборов на территории Республики Узбекистан нет.
+                </p>
+                <p class="main-popup__subtitle">
+                  В дальнейших планах центр по сертификации планирует войти в
+                  состав международных аккредитованных лабораторий ИЛАК – (ILAC
+                  – International Laboratory Accreditation Cooperation –
+                  Международная организация по аккредитации лабораторий). После
+                  признания ИЛАК протоколы, выданные Аккредитованной
+                  испытательной лабораторией имеет силу в Европе и СНГ.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="close" data-bs-dismiss="modal">
+                  <i class="fa-regular fa-xmark"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- File -->
+      <section class="file">
+        <div class="container d-flex">
+          <p class="file-subtitle">
+            Общая Политика Комплекса испытательных лабораторий ​​​​​​​в области
+            качества, беспристрастности и конфиденциальности.
+          </p>
+          <button class="file-btn btn-w">Скачать .pdf</button>
         </div>
       </section>
 
@@ -197,140 +549,1737 @@
         <div class="container">
           <h2 class="offer-title">Предлагаемые услуги</h2>
           <div class="offer-content__left offer-content">
-            <img src="./assests/img/Offer@1x-1.jpg" srcset="./assests/img/Offer@1x.jpg 1x, ./assests/img/Offer@2x.jpg 2x" alt="Offer img">
+            <img
+              class="offer-img"
+              src="./assests/img/Offer@1x-1.jpg"
+              srcset="
+                ./assests/img/Offer@1x.jpg 1x,
+                ./assests/img/Offer@2x.jpg 2x
+              "
+              alt="Offer img"
+            />
             <div class="offer-about">
-              <img class="offer-about__icon" src="./assests/img/Frame 16.jpg" alt="">
+              <img
+                class="offer-about__icon"
+                src="./assests/img/More-icon.svg"
+                alt=""
+              />
               <h3 class="offer-about__title">Электротехнические продукции</h3>
-              <p class="offer-about__subtitle">Сектор светотехники, Сектор электротехническихизмерений – электробезопасность, Сектор климатических испытаний, Сектор радио-технических измерений.</p>
-              <button class="offer-about__btn btn-g">Заказать услугу</button>  
-              <button class="offer-about__btn btn-w">Подробнее</button>
-            </div>
-          </div>
-          <div class="offer-content__right offer-content">
-            <div class="offer-about">
-              <img class="offer-about__icon" src="./assests/img/Frame 16.jpg" alt="">
-              <h3 class="offer-about__title">Полимерные продукции</h3>
-              <p class="offer-about__subtitle">Сектор полимеров, Сектор огнестойкости 
-                и теплостойкости.
-                </p>
-              <button class="offer-about__btn btn-g">Заказать услугу</button>  
-              <button class="offer-about__btn btn-w">Подробнее</button>
-            </div>
-            <img src="./assests/img/Offer@1x-2.jpg" srcset="./assests/img/Offer@1x-2.jpg 1x, ./assests/img/Offer@2x-2.jpg 2x" alt="Offer img">
-          </div>
-          <div class="offer-content__left offer-content">
-            <img src="./assests/img/Offer@1x-3.jpg" srcset="./assests/img/Offer@1x-3.jpg 1x, ./assests/img/Offer@2x-3.jpg 2x" alt="Offer img">
-            <div class="offer-about">
-              <img class="offer-about__icon" src="./assests/img/Frame 16.jpg" alt="">
-              <h3 class="offer-about__title">Строительные продукции</h3>
-              <p class="offer-about__subtitle">Сектор строистельных испытаний. Сектор функциональных испытаний. Сектор механических испытаний.</p>
-              <button class="offer-about__btn btn-g">Заказать услугу</button>  
-              <button class="offer-about__btn btn-w">Подробнее</button>
-            </div>
-          </div>
-          <div class="offer-content__right offer-content">
-            <div class="offer-about">
-              <img class="offer-about__icon" src="./assests/img/Frame 16.jpg" alt="">
-              <h3 class="offer-about__title">Геологические исследования</h3>
-              <p class="offer-about__subtitle">Сектор инженерно-геологических изысканий, Сектор геологических работ для строительства.
+              <p class="offer-about__subtitle">
+                Сектор светотехники, Сектор электротехническихизмерений –
+                электробезопасность, Сектор климатических испытаний, Сектор
+                радио-технических измерений.
               </p>
-              <button class="offer-about__btn btn-g">Заказать услугу</button>  
-              <button class="offer-about__btn btn-w">Подробнее</button>
+              <button
+                data-bs-target="#offerModalBuy"
+                data-bs-toggle="modal"
+                class="offer-about__btn offer-about__btn-buy btn-g"
+              >
+                Заказать услугу
+              </button>
+              <button
+                data-bs-toggle="modal"
+                type="button"
+                data-bs-target="#offerModalMore"
+                class="offer-about__btn offer-about__btn-more btn-w"
+              >
+                Подробнее
+              </button>
             </div>
-            <img src="./assests/img/Offer@1x-4.jpg" srcset="./assests/img/Offer@1x-4.jpg 1x, ./assests/img/Offer@2x-4.jpg 2x" alt="Offer img">
+          </div>
+          <div class="offer-content__right offer-content">
+            <div class="offer-about">
+              <img
+                class="offer-about__icon"
+                src="./assests/img/More-icon1.svg"
+                alt=""
+              />
+              <h3 class="offer-about__title">Полимерные продукции</h3>
+              <p class="offer-about__subtitle">
+                Сектор полимеров, Сектор огнестойкости и теплостойкости.
+              </p>
+              <button
+                data-bs-target="#offerModalBuy"
+                data-bs-toggle="modal"
+                class="offer-about__btn offer-about__btn-buy btn-g"
+              >
+                Заказать услугу
+              </button>
+              <button
+                data-bs-toggle="modal"
+                type="button"
+                data-bs-target="#offerModalMore"
+                class="offer-about__btn offer-about__btn-more btn-w"
+              >
+                Подробнее
+              </button>
+            </div>
+            <img
+              class="offer-img"
+              src="./assests/img/Offer@1x-2.jpg"
+              srcset="
+                ./assests/img/Offer@1x-2.jpg 1x,
+                ./assests/img/Offer@2x-2.jpg 2x
+              "
+              alt="Offer img"
+            />
           </div>
           <div class="offer-content__left offer-content">
-            <img src="./assests/img/Offer@1x-1.jpg" srcset="./assests/img/Offer@1x-1.jpg 1x, ./assests/img/Offer@2x-1.jpg 2x" alt="Offer img">
+            <img
+              class="offer-img"
+              src="./assests/img/Offer@1x-3.jpg"
+              srcset="
+                ./assests/img/Offer@1x-3.jpg 1x,
+                ./assests/img/Offer@2x-3.jpg 2x
+              "
+              alt="Offer img"
+            />
             <div class="offer-about">
-              <img class="offer-about__icon" src="./assests/img/Frame 16.jpg" alt="">
+              <img
+                class="offer-about__icon"
+                src="./assests/img/More-icon2.svg"
+                alt=""
+              />
+              <h3 class="offer-about__title">Строительные продукции</h3>
+              <p class="offer-about__subtitle">
+                Сектор строистельных испытаний. Сектор функциональных испытаний.
+                Сектор механических испытаний.
+              </p>
+              <button
+                data-bs-target="#offerModalBuy"
+                data-bs-toggle="modal"
+                class="offer-about__btn offer-about__btn-buy btn-g"
+              >
+                Заказать услугу
+              </button>
+              <button
+                data-bs-toggle="modal"
+                type="button"
+                data-bs-target="#offerModalMore"
+                class="offer-about__btn offer-about__btn-more btn-w"
+              >
+                Подробнее
+              </button>
+            </div>
+          </div>
+          <div class="offer-content__right offer-content">
+            <div class="offer-about">
+              <img
+                class="offer-about__icon"
+                src="./assests/img/More-icon3.svg"
+                alt=""
+              />
+              <h3 class="offer-about__title">Геологические исследования</h3>
+              <p class="offer-about__subtitle">
+                Сектор инженерно-геологических изысканий, Сектор геологических
+                работ для строительства.
+              </p>
+              <button
+                data-bs-target="#offerModalBuy"
+                data-bs-toggle="modal"
+                class="offer-about__btn offer-about__btn-buy btn-g"
+              >
+                Заказать услугу
+              </button>
+              <button
+                data-bs-toggle="modal"
+                type="button"
+                data-bs-target="#offerModalMore"
+                class="offer-about__btn offer-about__btn-more btn-w"
+              >
+                Подробнее
+              </button>
+            </div>
+            <img
+              class="offer-img"
+              src="./assests/img/Offer@1x-4.jpg"
+              srcset="
+                ./assests/img/Offer@1x-4.jpg 1x,
+                ./assests/img/Offer@2x-4.jpg 2x
+              "
+              alt="Offer img"
+            />
+          </div>
+          <div class="offer-content__left offer-content">
+            <img
+              class="offer-img"
+              src="./assests/img/Offer@1x-1.jpg"
+              srcset="
+                ./assests/img/Offer@1x-1.jpg 1x,
+                ./assests/img/Offer@2x-1.jpg 2x
+              "
+              alt="Offer img"
+            />
+            <div class="offer-about">
+              <img
+                class="offer-about__icon"
+                src="./assests/img/More-icon4.svg"
+                alt=""
+              />
               <h3 class="offer-about__title">Металлические продукции</h3>
-              <p class="offer-about__subtitle">Сектор инженерно-геологических изысканий, сектор геологических работ для строительства.</p>
-              <button class="offer-about__btn btn-g">Заказать услугу</button>  
-              <button class="offer-more btn-w">Подробнее</button>
+              <p class="offer-about__subtitle">
+                Сектор инженерно-геологических изысканий, сектор геологических
+                работ для строительства.
+              </p>
+              <button
+                data-bs-target="#offerModalBuy"
+                data-bs-toggle="modal"
+                class="offer-about__btn offer-about__btn-buy btn-g"
+              >
+                Заказать услугу
+              </button>
+              <button
+                data-bs-toggle="modal"
+                type="button"
+                data-bs-target="#offerModalMore"
+                class="offer-more offer-about__btn offer-about__btn-more btn-w"
+              >
+                Подробнее
+              </button>
             </div>
           </div>
           <div class="offer-content__more">
-            <button class="offer-content__more-btn">Допольнительные услуги</button>
+            <button
+              data-bs-target="#offerBottomModalBuy"
+              data-bs-toggle="modal"
+              class="offer-content__more-btn"
+            >
+              Допольнительные услуги
+            </button>
           </div>
-          <div class="popup-more">
-            <div class="more-bg"></div>
-            <div class="more-card">
-              <h3 class="more-title">Допольнительные услуги</h3>
-              <p class="more-subtitle">Наша организация обеспечит Вам гарантию и помощь при получении сертификатов и разрешительных документов в короткие сроки:</p>
-              <ul class="more-list">
-                <li class="more-item">
-                  <img class="more-img" src="./assests/img/More-icon.svg" alt="more-icons">
-                  <p class="more-item__title">Сертификат соответсвия товара</p>
-                </li>
-                <li class="more-item">
-                  <img class="more-img" src="./assests/img/More-icon1.svg" alt="more-icons">
-                  <p class="more-item__title">Письма после сборки и монтажа для габаритных грузов</p>
-                </li>
-                <li class="more-item">
-                  <img class="more-img" src="./assests/img/More-icon2.svg" alt="more-icons">
-                  <p class="more-item__title">Санитарно-эпидемиологическое заключение</p>
-                </li>
-                <li class="more-item">
-                  <img class="more-img" src="./assests/img/More-icon3.svg" alt="more-icons">
-                  <p class="more-item__title">Экспертное заключение кодов ТН ВЭД РУз</p>
-                </li>
-                <li class="more-item">
-                  <img class="more-img" src="./assests/img/More-icon4.svg" alt="more-icons">
-                  <p class="more-item__title">Экологический сертификат</p>
-                </li>
-                <li class="more-item">
-                  <img class="more-img" src="./assests/img/More-icon5.svg" alt="more-icons">
-                  <p class="more-item__title">Экологическое разрешение за ввоз и вывоз озоноразрушающих веществ и продуктов</p>
-                </li>
-                <li class="more-item">
-                  <img class="more-img" src="./assests/img/More-icon6.svg" alt="more-icons">
-                  <p class="more-item__title">Ветеринарный сертификат</p>
-                </li>
-                <li class="more-item">
-                  <img class="more-img" src="./assests/img/More-icon7.svg" alt="more-icons">
-                  <p class="more-item__title">Ветеринарное разрешение</p>
-                </li>
-                <li class="more-item">
-                  <img class="more-img" src="./assests/img/More-icon8.svg" alt="more-icons">
-                  <p class="more-item__title">Карантийное разрешение (ИКР/АКД)</p>
-                </li>
-              </ul>
-              <button class="more-request btn-g">Заказать услугу</button>
-              <span class="more-close close">&times;</span>
+        </div>
+
+        <!-- Offer Modal More -->
+        <div
+          class="modal fade"
+          id="offerModalMore"
+          aria-hidden="true"
+          aria-labelledby="exampleModalToggleLabel"
+          tabindex="-1"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content offer-modal__content">
+              <div class="modal-header">
+                <img
+                  class="offer-popup__img"
+                  src=".//img/Rectangle 8@1x-1.jpg"
+                  srcset="
+                    ./assests/img/Rectangle@1x-1.jpg 1x,
+                    ./assests/img/Rectangle@2x-1.jpg 2x
+                  "
+                  alt="banner image"
+                />
+                <h3
+                  class="modal-title offer-popup__title"
+                  id="exampleModalToggleLabel"
+                >
+                  Modal 1
+                </h3>
+                <button
+                  type="button"
+                  class="close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <i class="fa-regular fa-xmark"></i>
+                </button>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+              <div class="modal-body offer-popup__subtitle">
+                Центр по сертификации электротехнических, полимерных,
+                строительных и металлических изделий оказывают услуги по
+                проведению различных испытаний, выдаче сертификатов
+                соответствия. В область аккредитации аккредитованной
+                испытательной лаборатории и аккредитованного органа по
+                сертификации продукции входят более 1000 наименований продукции.
+              </div>
+              <div class="modal-footer">
+                <button
+                  class="btn-g"
+                  data-bs-target="#offerModalMoreBuy"
+                  data-bs-toggle="modal"
+                >
+                  Связаться с нами
+                </button>
+              </div>
+              <img
+                class="popup-back-img"
+                src="./assests/img/Banner@1x.png"
+                srcset="
+                  ./assests/img/Banner@1x.png 1x,
+                  ./assests/img/Banner@2x.png 2x
+                "
+                alt="banner-back-img"
+              />
             </div>
           </div>
         </div>
-        <div class="offer-popup">
-          <div class="offer-back"></div>
-          <div class="offer-card">
-            <img
-              class="offer-popup__img"
-              src=".//img/Rectangle 8@1x-1.jpg"
-              srcset="
-                ./assests/img/Rectangle@1x-1.jpg 1x,
-                ./assests/img/Rectangle@2x-1.jpg 2x
-              "
-              alt="offer image"
-            />
-            <h2 class="offer-popup__title">Сертификационный орган</h2>
-            <p class="offer-popup__subtitle">
-              Центр по сертификации электротехнических, полимерных, строительных
-              и металлических изделий оказывают услуги по проведению различных
-              испытаний, выдаче сертификатов соответствия. В область
-              аккредитации аккредитованной испытательной лаборатории и
-              аккредитованного органа по сертификации продукции входят более
-              1000 наименований продукции.
-            </p>
-            <button class="offer-popup__contact btn-g">Связаться с нами</button>
-            <span class="offer-popup__close">&times;</span>
+        <!-- Offer Modal More Buy -->
+        <div
+          class="modal fade"
+          id="offerModalMoreBuy"
+          aria-hidden="true"
+          aria-labelledby="exampleModalToggleLabel2"
+          tabindex="-1"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-p">
+              <div class="modal-header">
+                <h5
+                  class="modal-title request-title"
+                  id="exampleModalToggleLabel2"
+                >
+                  Хотите заказать услугу?
+                </h5>
+                <p class="request-subtitle">
+                  Оставьте заявку и мы скоро свяжемся с вами
+                </p>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body modal-f">
+                <input placeholder="Имя" type="text" class="request-input" />
+                <input
+                  placeholder="Номер телефона"
+                  type="text"
+                  class="request-input"
+                />
+              </div>
+              <div class="modal-footer request-modal__footer">
+                <button
+                  class="btn-g col-lg-6"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-notification"
+                >
+                  Оставить заявку
+                </button>
+                <button
+                  class="btn-w col-lg-6"
+                  data-bs-target="#offerModalMore"
+                  data-bs-toggle="modal"
+                >
+                  Отменить
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Offer Modal Request -->
+        <div
+          class="modal fade"
+          id="offerModalBuy"
+          aria-hidden="true"
+          aria-labelledby="exampleModalToggleLabel2"
+          tabindex="-1"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-p">
+              <div class="modal-header">
+                <h5
+                  class="modal-title request-title"
+                  id="exampleModalToggleLabel2"
+                >
+                  Хотите заказать услугу?
+                </h5>
+                <p class="request-subtitle">
+                  Оставьте заявку и мы скоро свяжемся с вами
+                </p>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body modal-f">
+                <input placeholder="Имя" type="text" class="request-input" />
+                <input
+                  placeholder="Номер телефона"
+                  type="text"
+                  class="request-input"
+                />
+              </div>
+              <div class="modal-footer request-modal__footer">
+                <button
+                  class="btn-g col-lg-6"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-notification"
+                >
+                  Оставить заявку
+                </button>
+                <button class="btn-w col-lg-6" data-bs-toggle="modal">
+                  Отменить
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Offer Bottom More Modal -->
+        <div
+          class="modal fade"
+          id="offerBottomModalBuy"
+          aria-hidden="true"
+          aria-labelledby="exampleModalToggleLabel"
+          tabindex="-1"
+        >
+          <div class="modal-dialog offer-modal__dialog modal-dialog-centered">
+            <div class="modal-content offer-more__content offer-modal__content">
+              <div class="modal-header">
+                <h3
+                  class="modal-title offer-more__title"
+                  id="exampleModalToggleLabel"
+                >
+                  Допольнительные услуги
+                </h3>
+                <p class="modal-subtitle offer-more__subtitle">
+                  Наша организация обеспечит Вам гарантию и помощь при получении
+                  сертификатов и разрешительных документов в короткие сроки:
+                </p>
+                <button
+                  type="button"
+                  class="close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <i class="fa-regular fa-xmark"></i>
+                </button>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <ul class="offer-modal__list">
+                  <li class="offer-modal__item">
+                    <img src="./assests/img/More-icon.svg" alt="icon image" />
+                    <h4 class="offer-modal__item-title">
+                      Сертификат соответсвия товара
+                    </h4>
+                  </li>
+                  <li class="offer-modal__item">
+                    <img src="./assests/img/More-icon1.svg" alt="icon image" />
+                    <h4 class="offer-modal__item-title">
+                      Письма после сборки и монтажа для габаритных грузов
+                    </h4>
+                  </li>
+                  <li class="offer-modal__item">
+                    <img src="./assests/img/More-icon2.svg" alt="icon image" />
+                    <h4 class="offer-modal__item-title">
+                      Санитарно-эпидемиологическое заключение
+                    </h4>
+                  </li>
+                  <li class="offer-modal__item">
+                    <img src="./assests/img/More-icon3.svg" alt="icon image" />
+                    <h4 class="offer-modal__item-title">
+                      Экспертное заключение кодов ТН ВЭД РУз
+                    </h4>
+                  </li>
+                  <li class="offer-modal__item">
+                    <img src="./assests/img/More-icon4.svg" alt="icon image" />
+                    <h4 class="offer-modal__item-title">
+                      Экологический сертификат
+                    </h4>
+                  </li>
+                  <li class="offer-modal__item">
+                    <img src="./assests/img/More-icon5.svg" alt="icon image" />
+                    <h4 class="offer-modal__item-title">
+                      Экологическое разрешение за ввоз и вывоз озоноразрушающих
+                      веществ и продуктов
+                    </h4>
+                  </li>
+                  <li class="offer-modal__item">
+                    <img src="./assests/img/More-icon6.svg" alt="icon image" />
+                    <h4 class="offer-modal__item-title">
+                      Ветеринарный сертификат
+                    </h4>
+                  </li>
+                  <li class="offer-modal__item">
+                    <img src="./assests/img/More-icon7.svg" alt="icon image" />
+                    <h4 class="offer-modal__item-title">
+                      Ветеринарное разрешение
+                    </h4>
+                  </li>
+                  <li class="offer-modal__item">
+                    <img src="./assests/img/More-icon8.svg" alt="icon image" />
+                    <h4 class="offer-modal__item-title">
+                      Карантийное разрешение (ИКР/АКД)
+                    </h4>
+                  </li>
+                  <li class="offer-modal__item">
+                    <img src="./assests/img/More-icon.svg" alt="icon image" />
+                    <h4 class="offer-modal__item-title">
+                      Сертификат соответсвия товара
+                    </h4>
+                  </li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <button
+                  class="btn-g offer-more__btn"
+                  data-bs-target="#offerBottomModalBuy2"
+                  data-bs-toggle="modal"
+                >
+                  Связаться с нами
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="modal fade"
+          id="offerBottomModalBuy2"
+          aria-hidden="true"
+          aria-labelledby="exampleModalToggleLabel2"
+          tabindex="-1"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-p">
+              <div class="modal-header">
+                <h5
+                  class="modal-title request-title"
+                  id="exampleModalToggleLabel2"
+                >
+                  Хотите заказать услугу?
+                </h5>
+                <p class="request-subtitle">
+                  Оставьте заявку и мы скоро свяжемся с вами
+                </p>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+
+              <div class="modal-body modal-f">
+                <input placeholder="Имя" type="text" class="request-input" />
+                <input
+                  placeholder="Номер телефона"
+                  type="text"
+                  class="request-input"
+                />
+              </div>
+              <div class="modal-footer request-modal__footer">
+                <button
+                  class="btn-g col-lg-6"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-notification"
+                >
+                  Оставить заявку
+                </button>
+                <button
+                  class="btn-w col-lg-6"
+                  data-bs-target="#offerBottomModalBuy"
+                  data-bs-toggle="modal"
+                >
+                  Отменить
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <!--  -->
+      <!-- Partners Section -->
+      <section class="partner">
+        <div class="container">
+          <h2 class="partner-title">Партнеры</h2>
+          <!-- Swiper -->
+          <div class="swiper wolf">
+            <div id="swiper-nowrap" class="swiper-wrapper">
+              <div id="swiper-bg" class="swiper-slide swip">
+                <img
+                  src="./assests/img/Frame49@1x.jpg"
+                  srcset="
+                    ./assests/img/Frame49@1x.jpg 1x,
+                    ./assests/img/Frame49@2x.jpg 2x
+                  "
+                  alt="Brand Logo Image"
+                />
+              </div>
+              <div id="swiper-bg" class="swiper-slide swip">
+                <img
+                  src="./assests/img/Frame50@1x.jpg"
+                  srcset="
+                    ./assests/img/Frame50@1x.jpg 1x,
+                    ./assests/img/Frame50@2x.jpg 2x
+                  "
+                  alt="Brand Logo Image"
+                />
+              </div>
+              <div id="swiper-bg" class="swiper-slide swip">
+                <img
+                  src="./assests/img/Frame51@1x.jpg"
+                  srcset="
+                    ./assests/img/Frame51@1x.jpg 1x,
+                    ./assests/img/Frame51@2x.jpg 2x
+                  "
+                  alt="Brand Logo Image"
+                />
+              </div>
+              <div id="swiper-bg" class="swiper-slide swip">
+                <img
+                  src="./assests/img/Frame52@1x.jpg"
+                  srcset="
+                    ./assests/img/Frame52@1x.jpg 1x,
+                    ./assests/img/Frame52@2x.jpg 2x
+                  "
+                  alt="Brand Logo Image"
+                />
+              </div>
+              <div id="swiper-bg" class="swiper-slide swip">
+                <img
+                  src="./assests/img/Frame53@1x.jpg"
+                  srcset="
+                    ./assests/img/Frame53@1x.jpg 1x,
+                    ./assests/img/Frame53@2x.jpg 2x
+                  "
+                  alt="Brand Logo Image"
+                />
+              </div>
+              <div id="swiper-bg" class="swiper-slide swip">
+                <img
+                  src="./assests/img/Frame60@1x.jpg"
+                  srcset="
+                    ./assests/img/Frame60@1x.jpg 1x,
+                    ./assests/img/Frame60@2x.jpg 2x
+                  "
+                  alt="Brand Logo Image"
+                />
+              </div>
+              <div id="swiper-bg" class="swiper-slide swip">
+                <img
+                  src="./assests/img/Frame61@1x.jpg"
+                  srcset="
+                    ./assests/img/Frame61@1x.jpg 1x,
+                    ./assests/img/Frame61@2x.jpg 2x
+                  "
+                  alt="Brand Logo Image"
+                />
+              </div>
+              <div id="swiper-bg" class="swiper-slide swip">
+                <img
+                  src="./assests/img/Frame62@1x.jpg"
+                  srcset="
+                    ./assests/img/Frame62@1x.jpg 1x,
+                    ./assests/img/Frame62@2x.jpg 2x
+                  "
+                  alt="Brand Logo Image"
+                />
+              </div>
+              <div id="swiper-bg" class="swiper-slide swip">
+                <img
+                  src="./assests/img/Frame63@1x.jpg"
+                  srcset="
+                    ./assests/img/Frame63@1x.jpg 1x,
+                    ./assests/img/Frame63@2x.jpg 2x
+                  "
+                  alt="Brand Logo Image"
+                />
+              </div>
+              <div id="swiper-bg" class="swiper-slide swip">
+                <img
+                  src="./assests/img/Frame65@1x.jpg"
+                  srcset="
+                    ./assests/img/Frame65@1x.jpg 1x,
+                    ./assests/img/Frame65@2x.jpg 2x
+                  "
+                  alt="Brand Logo Image"
+                />
+              </div>
+              <div id="swiper-bg" class="swiper-slide swip">
+                <img
+                  src="./assests/img/Frame67@1x.jpg"
+                  srcset="
+                    ./assests/img/Frame67@1x.jpg 1x,
+                    ./assests/img/Frame67@2x.jpg 2x
+                  "
+                  alt="Brand Logo Image"
+                />
+              </div>
+              <div id="swiper-bg" class="swiper-slide swip">
+                <img
+                  src="./assests/img/Frame68@1x.jpg"
+                  srcset="
+                    ./assests/img/Frame68@1x.jpg 1x,
+                    ./assests/img/Frame68@2x.jpg 2x
+                  "
+                  alt="Brand Logo Image"
+                />
+              </div>
+              <div id="swiper-bg" class="swiper-slide swip">
+                <img
+                  src="./assests/img/Frame69@1x.jpg"
+                  srcset="
+                    ./assests/img/Frame69@1x.jpg 1x,
+                    ./assests/img/Frame69@2x.jpg 2x
+                  "
+                  alt="Brand Logo Image"
+                />
+              </div>
+              <div id="swiper-bg" class="swiper-slide swip">
+                <img
+                  src="./assests/img/Frame70@1x.jpg"
+                  srcset="
+                    ./assests/img/Frame70@1x.jpg 1x,
+                    ./assests/img/Frame70@2x.jpg 2x
+                  "
+                  alt="Brand Logo Image"
+                />
+              </div>
+              <div id="swiper-bg" class="swiper-slide swip">
+                <img
+                  src="./assests/img/Frame71@1x.jpg"
+                  srcset="
+                    ./assests/img/Frame71@1x.jpg 1x,
+                    ./assests/img/Frame71@2x.jpg 2x
+                  "
+                  alt="Brand Logo Image"
+                />
+              </div>
+              <div id="swiper-bg" class="swiper-slide swip">
+                <img
+                  src="./assests/img/Frame72@1x.jpg"
+                  srcset="
+                    ./assests/img/Frame72@1x.jpg 1x,
+                    ./assests/img/Frame72@2x.jpg 2x
+                  "
+                  alt="Brand Logo Image"
+                />
+              </div>
+              <div id="swiper-bg" class="swiper-slide swip">
+                <img
+                  src="./assests/img/Frame73@1x.jpg"
+                  srcset="
+                    ./assests/img/Frame73@1x.jpg 1x,
+                    ./assests/img/Frame73@2x.jpg 2x
+                  "
+                  alt="Brand Logo Image"
+                />
+              </div>
+              <div id="swiper-bg" class="swiper-slide swip">
+                <img
+                  src="./assests/img/Frame49@1x.jpg"
+                  srcset="
+                    ./assests/img/Frame49@1x.jpg 1x,
+                    ./assests/img/Frame49@2x.jpg 2x
+                  "
+                  alt="Brand Logo Image"
+                />
+              </div>
+              <div id="swiper-bg" class="swiper-slide swip">
+                <img
+                  src="./assests/img/Frame50@1x.jpg"
+                  srcset="
+                    ./assests/img/Frame50@1x.jpg 1x,
+                    ./assests/img/Frame50@2x.jpg 2x
+                  "
+                  alt="Brand Logo Image"
+                />
+              </div>
+              <div id="swiper-bg" class="swiper-slide swip">
+                <img
+                  src="./assests/img/Frame51@1x.jpg"
+                  srcset="
+                    ./assests/img/Frame51@1x.jpg 1x,
+                    ./assests/img/Frame51@2x.jpg 2x
+                  "
+                  alt="Brand Logo Image"
+                />
+              </div>
+              <div id="swiper-bg" class="swiper-slide swip">
+                <img
+                  src="./assests/img/Frame52@1x.jpg"
+                  srcset="
+                    ./assests/img/Frame52@1x.jpg 1x,
+                    ./assests/img/Frame52@2x.jpg 2x
+                  "
+                  alt="Brand Logo Image"
+                />
+              </div>
+              <div id="swiper-bg" class="swiper-slide swip">
+                <img
+                  src="./assests/img/Frame53@1x.jpg"
+                  srcset="
+                    ./assests/img/Frame53@1x.jpg 1x,
+                    ./assests/img/Frame53@2x.jpg 2x
+                  "
+                  alt="Brand Logo Image"
+                />
+              </div>
+              <div id="swiper-bg" class="swiper-slide swip">
+                <img
+                  src="./assests/img/Frame60@1x.jpg"
+                  srcset="
+                    ./assests/img/Frame60@1x.jpg 1x,
+                    ./assests/img/Frame60@2x.jpg 2x
+                  "
+                  alt="Brand Logo Image"
+                />
+              </div>
+              <div id="swiper-bg" class="swiper-slide swip">
+                <img
+                  src="./assests/img/Frame73@1x.jpg"
+                  srcset="
+                    ./assests/img/Frame73@1x.jpg 1x,
+                    ./assests/img/Frame73@2x.jpg 2x
+                  "
+                  alt="Brand Logo Image"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev partner-prev">
+            <i class="fa-solid fa-arrow-left"></i>
+          </div>
+          <div class="swiper-button-next partner-next">
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+      </section>
 
+      <!-- Gallery Section -->
+      <section class="gallery">
+        <div class="container">
+          <h2 class="gallery-title">Галерея</h2>
+        </div>
+        <div class="gallery-content">
+          <div class="scroll-road"></div>
+          <ul class="gallery-list">
+            <li class="gallery-item">
+              <img
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                class="gallery-img"
+                src="./assests/img/Gallery41@1x.jpg"
+                srcset="
+                  ./assests/img/Gallery44@1x.jpg 1x,
+                  ./assests/img/Gallery44@2x.jpg 2x
+                "
+                alt="Gallery Images"
+              />
+              <img
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                class="gallery-img"
+                src="./assests/img/Gallery42@1x.jpg"
+                srcset="
+                  ./assests/img/Gallery43@1x.jpg 1x,
+                  ./assests/img/Gallery43@2x.jpg 2x
+                "
+                alt="Gallery Images"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                class="gallery-img"
+                src="./assests/img/Gallery41@1x.jpg"
+                srcset="
+                  ./assests/img/Gallery41@1x.jpg 1x,
+                  ./assests/img/Gallery41@2x.jpg 2x
+                "
+                alt="Gallery Images"
+              />
+              <img
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                class="gallery-img"
+                src="./assests/img/Gallery42@1x.jpg"
+                srcset="
+                  ./assests/img/Gallery42@1x.jpg 1x,
+                  ./assests/img/Gallery42@2x.jpg 2x
+                "
+                alt="Gallery Images"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                class="gallery-img"
+                src="./assests/img/Gallery41@1x.jpg"
+                srcset="
+                  ./assests/img/Gallery48@1x.jpg 1x,
+                  ./assests/img/Gallery48@2x.jpg 2x
+                "
+                alt="Gallery Images"
+              />
+              <img
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                class="gallery-img"
+                src="./assests/img/Gallery42@1x.jpg"
+                srcset="
+                  ./assests/img/Gallery47@1x.jpg 1x,
+                  ./assests/img/Gallery47@2x.jpg 2x
+                "
+                alt="Gallery Images"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                class="gallery-img"
+                src="./assests/img/Gallery41@1x.jpg"
+                srcset="
+                  ./assests/img/Gallery41@1x.jpg 1x,
+                  ./assests/img/Gallery41@2x.jpg 2x
+                "
+                alt="Gallery Images"
+              />
+              <img
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                class="gallery-img"
+                src="./assests/img/Gallery42@1x.jpg"
+                srcset="
+                  ./assests/img/Gallery42@1x.jpg 1x,
+                  ./assests/img/Gallery42@2x.jpg 2x
+                "
+                alt="Gallery Images"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                class="gallery-img"
+                src="./assests/img/Gallery41@1x.jpg"
+                srcset="
+                  ./assests/img/Gallery48@1x.jpg 1x,
+                  ./assests/img/Gallery48@2x.jpg 2x
+                "
+                alt="Gallery Images"
+              />
+              <img
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                class="gallery-img"
+                src="./assests/img/Gallery42@1x.jpg"
+                srcset="
+                  ./assests/img/Gallery47@1x.jpg 1x,
+                  ./assests/img/Gallery47@2x.jpg 2x
+                "
+                alt="Gallery Images"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                class="gallery-img"
+                src="./assests/img/Gallery41@1x.jpg"
+                srcset="
+                  ./assests/img/Gallery41@1x.jpg 1x,
+                  ./assests/img/Gallery41@2x.jpg 2x
+                "
+                alt="Gallery Images"
+              />
+              <img
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                class="gallery-img"
+                src="./assests/img/Gallery42@1x.jpg"
+                srcset="
+                  ./assests/img/Gallery42@1x.jpg 1x,
+                  ./assests/img/Gallery42@2x.jpg 2x
+                "
+                alt="Gallery Images"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                class="gallery-img"
+                src="./assests/img/Gallery41@1x.jpg"
+                srcset="
+                  ./assests/img/Gallery44@1x.jpg 1x,
+                  ./assests/img/Gallery44@2x.jpg 2x
+                "
+                alt="Gallery Images"
+              />
+              <img
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                class="gallery-img"
+                src="./assests/img/Gallery42@1x.jpg"
+                srcset="
+                  ./assests/img/Gallery43@1x.jpg 1x,
+                  ./assests/img/Gallery43@2x.jpg 2x
+                "
+                alt="Gallery Images"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                class="gallery-img"
+                src="./assests/img/Gallery41@1x.jpg"
+                srcset="
+                  ./assests/img/Gallery41@1x.jpg 1x,
+                  ./assests/img/Gallery41@2x.jpg 2x
+                "
+                alt="Gallery Images"
+              />
+              <img
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                class="gallery-img"
+                src="./assests/img/Gallery42@1x.jpg"
+                srcset="
+                  ./assests/img/Gallery42@1x.jpg 1x,
+                  ./assests/img/Gallery42@2x.jpg 2x
+                "
+                alt="Gallery Images"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                class="gallery-img"
+                src="./assests/img/Gallery41@1x.jpg"
+                srcset="
+                  ./assests/img/Gallery48@1x.jpg 1x,
+                  ./assests/img/Gallery48@2x.jpg 2x
+                "
+                alt="Gallery Images"
+              />
+              <img
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                class="gallery-img"
+                src="./assests/img/Gallery42@1x.jpg"
+                srcset="
+                  ./assests/img/Gallery47@1x.jpg 1x,
+                  ./assests/img/Gallery47@2x.jpg 2x
+                "
+                alt="Gallery Images"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                class="gallery-img"
+                src="./assests/img/Gallery41@1x.jpg"
+                srcset="
+                  ./assests/img/Gallery41@1x.jpg 1x,
+                  ./assests/img/Gallery41@2x.jpg 2x
+                "
+                alt="Gallery Images"
+              />
+              <img
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                class="gallery-img"
+                src="./assests/img/Gallery42@1x.jpg"
+                srcset="
+                  ./assests/img/Gallery42@1x.jpg 1x,
+                  ./assests/img/Gallery42@2x.jpg 2x
+                "
+                alt="Gallery Images"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                class="gallery-img"
+                src="./assests/img/Gallery41@1x.jpg"
+                srcset="
+                  ./assests/img/Gallery48@1x.jpg 1x,
+                  ./assests/img/Gallery48@2x.jpg 2x
+                "
+                alt="Gallery Images"
+              />
+              <img
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                class="gallery-img"
+                src="./assests/img/Gallery42@1x.jpg"
+                srcset="
+                  ./assests/img/Gallery47@1x.jpg 1x,
+                  ./assests/img/Gallery47@2x.jpg 2x
+                "
+                alt="Gallery Images"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                class="gallery-img"
+                src="./assests/img/Gallery41@1x.jpg"
+                srcset="
+                  ./assests/img/Gallery41@1x.jpg 1x,
+                  ./assests/img/Gallery41@2x.jpg 2x
+                "
+                alt="Gallery Images"
+              />
+              <img
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                class="gallery-img"
+                src="./assests/img/Gallery42@1x.jpg"
+                srcset="
+                  ./assests/img/Gallery42@1x.jpg 1x,
+                  ./assests/img/Gallery42@2x.jpg 2x
+                "
+                alt="Gallery Images"
+              />
+            </li>
+          </ul>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered gallery-modal">
+              <div class="modal-content">
+                <!-- Swiper Js Carusel -->
+                <div
+                  id="swiper-gallery-bg"
+                  style="
+                    --swiper-navigation-color: #fff;
+                    --swiper-pagination-color: #fff;
+                  "
+                  class="gallerySwiper2"
+                >
+                  <div id="swiper-wrapper-bg" class="swiper-wrapper">
+                    <!-- Swiper Slide -->
+                    <div id="swiper-slide-bg" class="swiper-slide">
+                      <img
+                        class="gallery-modal__img"
+                        src="./assests/img/Gallery41@1x.jpg"
+                        srcset="
+                          ./assests/img/Gallery41@1x.jpg 1x,
+                          ./assests/img/Gallery41@2x.jpg 2x
+                        "
+                      />
+                    </div>
+                    <div id="swiper-slide-bg" class="swiper-slide">
+                      <img
+                        class="gallery-modal__img"
+                        src="./assests/img/Gallery43@1x.jpg"
+                        srcset="
+                          ./assests/img/Gallery43@1x.jpg 1x,
+                          ./assests/img/Gallery43@2x.jpg 2x
+                        "
+                      />
+                    </div>
+                    <div id="swiper-slide-bg" class="swiper-slide">
+                      <img
+                        class="gallery-modal__img"
+                        src="./assests/img/Gallery47@1x.jpg"
+                        srcset="
+                          ./assests/img/Gallery47@1x.jpg 1x,
+                          ./assests/img/Gallery47@2x.jpg 2x
+                        "
+                      />
+                    </div>
+                    <div id="swiper-slide-bg" class="swiper-slide">
+                      <img
+                        class="gallery-modal__img"
+                        src="./assests/img/Gallery41@1x.jpg"
+                        srcset="
+                          ./assests/img/Gallery41@1x.jpg 1x,
+                          ./assests/img/Gallery41@2x.jpg 2x
+                        "
+                      />
+                    </div>
+                    <div id="swiper-slide-bg" class="swiper-slide">
+                      <img
+                        class="gallery-modal__img"
+                        src="./assests/img/Gallery43@1x.jpg"
+                        srcset="
+                          ./assests/img/Gallery43@1x.jpg 1x,
+                          ./assests/img/Gallery43@2x.jpg 2x
+                        "
+                      />
+                    </div>
+                    <div id="swiper-slide-bg" class="swiper-slide">
+                      <img
+                        class="gallery-modal__img"
+                        src="./assests/img/Gallery47@1x.jpg"
+                        srcset="
+                          ./assests/img/Gallery47@1x.jpg 1x,
+                          ./assests/img/Gallery47@2x.jpg 2x
+                        "
+                      />
+                    </div>
+                    <div id="swiper-slide-bg" class="swiper-slide">
+                      <img
+                        class="gallery-modal__img"
+                        src="./assests/img/Gallery41@1x.jpg"
+                        srcset="
+                          ./assests/img/Gallery41@1x.jpg 1x,
+                          ./assests/img/Gallery41@2x.jpg 2x
+                        "
+                      />
+                    </div>
+                    <div id="swiper-slide-bg" class="swiper-slide">
+                      <img
+                        class="gallery-modal__img"
+                        src="./assests/img/Gallery43@1x.jpg"
+                        srcset="
+                          ./assests/img/Gallery43@1x.jpg 1x,
+                          ./assests/img/Gallery43@2x.jpg 2x
+                        "
+                      />
+                    </div>
+                    <div id="swiper-slide-bg" class="swiper-slide">
+                      <img
+                        class="gallery-modal__img"
+                        src="./assests/img/Gallery47@1x.jpg"
+                        srcset="
+                          ./assests/img/Gallery47@1x.jpg 1x,
+                          ./assests/img/Gallery47@2x.jpg 2x
+                        "
+                      />
+                    </div>
+                  </div>
+                  <!-- Swiper Buttons -->
+                  <div
+                    class="swiper-button-next gallery-next gallery-swiper__button"
+                  ></div>
+                  <div
+                    class="swiper-button-prev gallery-prev gallery-swiper__button"
+                  ></div>
+                </div>
+                <!-- Swiper Gallery Bottom -->
+                <div thumbsSlider="" class="gallerySwiper">
+                  <!-- Swiper Wrapper -->
+                  <div class="swiper-wrapper">
+                    <div id="swiper-w" class="swiper-slide">
+                      <img
+                        class="gallery-modal__img-small"
+                        src="./assests/img/Gallery41@1x.jpg"
+                        srcset="
+                          ./assests/img/Gallery41@1x.jpg 1x,
+                          ./assests/img/Gallery41@2x.jpg 2x
+                        "
+                      />
+                    </div>
+                    <div id="swiper-w" class="swiper-slide">
+                      <img
+                        class="gallery-modal__img-small"
+                        src="./assests/img/Gallery43@1x.jpg"
+                        srcset="
+                          ./assests/img/Gallery43@1x.jpg 1x,
+                          ./assests/img/Gallery43@2x.jpg 2x
+                        "
+                      />
+                    </div>
+                    <div id="swiper-w" class="swiper-slide">
+                      <img
+                        class="gallery-modal__img-small"
+                        src="./assests/img/Gallery47@1x.jpg"
+                        srcset="
+                          ./assests/img/Gallery47@1x.jpg 1x,
+                          ./assests/img/Gallery47@2x.jpg 2x
+                        "
+                      />
+                    </div>
+                    <div id="swiper-w" class="swiper-slide">
+                      <img
+                        class="gallery-modal__img-small"
+                        src="./assests/img/Gallery41@1x.jpg"
+                        srcset="
+                          ./assests/img/Gallery41@1x.jpg 1x,
+                          ./assests/img/Gallery41@2x.jpg 2x
+                        "
+                      />
+                    </div>
+                    <div id="swiper-w" class="swiper-slide">
+                      <img
+                        class="gallery-modal__img-small"
+                        src="./assests/img/Gallery43@1x.jpg"
+                        srcset="
+                          ./assests/img/Gallery43@1x.jpg 1x,
+                          ./assests/img/Gallery43@2x.jpg 2x
+                        "
+                      />
+                    </div>
+                    <div id="swiper-w" class="swiper-slide">
+                      <img
+                        class="gallery-modal__img-small"
+                        src="./assests/img/Gallery47@1x.jpg"
+                        srcset="
+                          ./assests/img/Gallery47@1x.jpg 1x,
+                          ./assests/img/Gallery47@2x.jpg 2x
+                        "
+                      />
+                    </div>
+                    <div id="swiper-w" class="swiper-slide">
+                      <img
+                        class="gallery-modal__img-small"
+                        src="./assests/img/Gallery41@1x.jpg"
+                        srcset="
+                          ./assests/img/Gallery41@1x.jpg 1x,
+                          ./assests/img/Gallery41@2x.jpg 2x
+                        "
+                      />
+                    </div>
+                    <div id="swiper-w" class="swiper-slide">
+                      <img
+                        class="gallery-modal__img-small"
+                        src="./assests/img/Gallery43@1x.jpg"
+                        srcset="
+                          ./assests/img/Gallery43@1x.jpg 1x,
+                          ./assests/img/Gallery43@2x.jpg 2x
+                        "
+                      />
+                    </div>
+                    <div id="swiper-w" class="swiper-slide">
+                      <img
+                        class="gallery-modal__img-small"
+                        src="./assests/img/Gallery47@1x.jpg"
+                        srcset="
+                          ./assests/img/Gallery47@1x.jpg 1x,
+                          ./assests/img/Gallery47@2x.jpg 2x
+                        "
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal Footer -->
+                <div class="modal-footer">
+                  <button type="button" class="close" data-bs-dismiss="modal">
+                    &times;
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact">
+        <div class="container">
+          <h2 class="contact-title">Свяжитесь с нами</h2>
+          <form class="contact-form" action="#!">
+            <input class="contact-name" type="text" placeholder="Имя" />
+            <input
+              type="text"
+              class="contact-fullname"
+              placeholder="Номер телефона"
+            />
+            <button
+              type="button"
+              data-bs-target="#modal-notification"
+              data-bs-toggle="modal"
+              class="btn-g contact-btn"
+            >
+              Отправить
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Cerf Section -->
+      <section class="cerf">
+        <div class="container">
+          <h2 class="cerf-title">Сертификаты и лицензии</h2>
+          <div class="swiper cerf-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="./assests/img/Sertificat1@1x.jpg"
+                  srcset="
+                    ./assests/img/Sertificat1@1x.jpg 1x,
+                    ./assests/img/Sertificat1@2x.jpg 2x
+                  "
+                  alt="Sertificat images"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assests/img/Sertificat2@1x.jpg"
+                  srcset="
+                    ./assests/img/Sertificat2@1x.jpg 1x,
+                    ./assests/img/Sertificat2@2x.jpg 2x
+                  "
+                  alt="Sertificat images"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assests/img/Sertificat3@1x.jpg"
+                  srcset="
+                    ./assests/img/Sertificat3@1x.jpg 1x,
+                    ./assests/img/Sertificat3@2x.jpg 2x
+                  "
+                  alt="Sertificat images"
+                />
+              </div>
+            </div>
+            <div class="swiper-button-next cerf-next"></div>
+            <div class="swiper-button-prev cerf-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        ¸
+      </section>
+
+      <!-- Desktop Section -->
+      <section class="desktop">
+        <div class="container">
+          <h2 class="desktop-title">
+            Возникли вопросы или хотите оставить жалобу?
+          </h2>
+          <form class="desktop-form" action="#!">
+            <input class="desktop-input col-6" type="text" placeholder="Имя" />
+            <input
+              class="desktop-input desktop-input__right col-6"
+              type="text"
+              placeholder="Крмментарий"
+            />
+            <input
+              class="desktop-input col-6"
+              type="text"
+              placeholder="Номер телефона"
+            />
+            <select class="desktop-select desktop-input__right col-6">
+              <option value="1">Тема оброщения</option>
+              <option value="2">оброщения</option>
+              <option value="3">Тема</option>
+            </select>
+            <label class="desktop-radio" for="radio">
+              <input id="radio" type="checkbox" class="desktop-radio" />
+              Я ознакомлен с <a href="#!">процедурой жалоб и аппеляций</a>
+            </label>
+            <button
+              type="button"
+              data-bs-target="#modal-notification"
+              data-bs-toggle="modal"
+              class="desktop-btn btn-g"
+            >
+              Отправить
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer-bg"></div>
+        <div class="container">
+          <div class="footer-nav">
+            <div class="footer-logo col-3">
+              <img src="./assests/img/trLogo.svg" alt="Logo Image" />
+              <h2 class="footer-title">OOO “Topfin Result”</h2>
+              <p class="footer-subtitle">
+                Аккредитованный центр по сертификации продукции
+              </p>
+            </div>
+            <div class="footer-contact col-3 col-sm-12">
+              <h3 class="footer-contact__title">Контакты</h3>
+              <ul class="footer-contact-list">
+                <li class="footer-contact-item">
+                  <a href="#!"
+                    ><i class="fa-solid fa-phone"></i> +99871 203 03 33</a
+                  >
+                </li>
+                <li class="footer-contact-item">
+                  <a href="#!"
+                    ><i class="fa-solid fa-phone"></i> +99871 513 03 33</a
+                  >
+                </li>
+                <li class="footer-contact-item">
+                  <a href="#!"
+                    ><i class="fa-regular fa-envelope"></i> help@topfin.uz</a
+                  >
+                </li>
+              </ul>
+              <h3 class="footer-contact__title">Социальные сети</h3>
+              <ul class="footer-contact__contact-list">
+                <li><i class="fa-brands fa-telegram"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fa-brands fa-youtube"></i></li>
+              </ul>
+            </div>
+            <div class="footer-map col-6 col-lg-8 col-md-9 col-sm-12">
+              <div class="footer-map__selectors">
+                <div class="footer-map__office active">
+                  <h3 class="footer-map__title">Главный офис</h3>
+                  <p class="footer-map__subtitle">
+                    Республика Узбекистан г. Ташкент. 100069 Шайхонтохурский
+                    район ул. Кичик Халка Йули, 2
+                  </p>
+                </div>
+                <div class="footer-map__factory">
+                  <h3 class="footer-map__title">Дочерное предприятие</h3>
+                  <p class="footer-map__subtitle">
+                    Республика Узбекистан г. Ташкент. Яшнабадский район, ул.
+                    Эльбек, 61
+                  </p>
+                </div>
+              </div>
+              <div class="footer-map__location">
+                <div
+                  class="map-office"
+                  style="position: relative; overflow: hidden"
+                >
+                  <a
+                    href="https://yandex.uz/maps/org/12181840575/?utm_medium=mapframe&utm_source=maps"
+                    style="
+                      color: #eee;
+                      font-size: 12px;
+                      position: absolute;
+                      top: 0px;
+                    "
+                    >Мечеть Минор</a
+                  ><a
+                    href="https://yandex.uz/maps/10335/tashkent/category/mosque/184106298/?utm_medium=mapframe&utm_source=maps"
+                    style="
+                      color: #eee;
+                      font-size: 12px;
+                      position: absolute;
+                      top: 14px;
+                    "
+                    >Мечеть в Ташкенте</a
+                  ><iframe
+                    src="https://yandex.uz/map-widget/v1/-/CCUVbCsvSA"
+                    width="560"
+                    height="400"
+                    frameborder="1"
+                    allowfullscreen="true"
+                    style="position: relative"
+                  ></iframe>
+                </div>
+                <div
+                  class="map-factory"
+                  style="position: relative; overflow: hidden"
+                >
+                  <a
+                    href="https://yandex.uz/maps/10335/tashkent/?utm_medium=mapframe&utm_source=maps"
+                    style="
+                      color: #eee;
+                      font-size: 12px;
+                      position: absolute;
+                      top: 0px;
+                    "
+                    >Ташкент</a
+                  ><a
+                    href="https://yandex.uz/maps/10335/tashkent/geo/1563122122/?ll=69.365418%2C41.282189&utm_medium=mapframe&utm_source=maps&z=12.96"
+                    style="
+                      color: #eee;
+                      font-size: 12px;
+                      position: absolute;
+                      top: 14px;
+                    "
+                    >Яшнободский район — Яндекс Карты</a
+                  ><iframe
+                    src="https://yandex.uz/map-widget/v1/-/CCUVbJEoGC"
+                    width="560"
+                    height="400"
+                    frameborder="1"
+                    allowfullscreen="true"
+                    style="position: relative"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
 
+    <!-- Bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Swiper Js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".banner-swiper", {
+        loop: true,
+        grabCursor: true,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+ 
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 1,
+          },
+        },
+      });
+      var swiper = new Swiper(".gallerySwiper", {
+        slidesPerView: 9,
+        spaceBetween: 10,
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+      var swiper2 = new Swiper(".gallerySwiper2", {
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".gallery-next",
+          prevEl: ".gallery-prev",
+        },
+        loop: true,
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+
+      // Brands swiper
+      let swipers = new Swiper(".wolf", {
+        slidesPerView: 6,
+        breakpoints: {
+          0: {
+            slidesPerView: 3,
+          },
+          768: {
+            slidesPerView: 3,
+          },
+        },
+        grid: {
+          rows: 3,
+        },
+        pagination: {
+          el: ".cerf-swiper__pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      // Cerf Swiper
+      var swiper = new Swiper(".cerf-swiper", {
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          991: {
+            slidesPerView: 3,
+          },
+        },
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <!-- main js -->
     <script src="main.js"></script>
   </body>
 </html>
+
+<!-- Button trigger modal
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          Launch demo modal
+        </button>
+
+         Modal -->
+<!-- <div
+          class="modal modal-dialog-scrollable"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">wol</div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="button" class="btn btn-primary">
+                  Save changes
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>  -->
