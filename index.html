@@ -49,6 +49,7 @@
                 </span>
               </h1>
             </div>
+            <button class="hamburger"><i class="fa-solid fa-bars"></i></button>
             <div class="nav-right">
               <ul class="nav-contact">
                 <li class="nav-contact__item">
@@ -77,6 +78,33 @@
               </ul>
             </div>
           </nav>
+        </div>
+        <div class="nav-media">
+          <ul class="nav-contact">
+            <li class="nav-contact__item">
+              <i class=""></i> +99833 752 20 22
+            </li>
+            <li class="nav-contact__item">
+              <i class=""></i> +99871 513 03 33
+            </li>
+            <li class="nav-language">
+              <span class="eng">Ru</span> <span class="eng">Eng</span>
+            </li>
+          </ul>
+          <ul class="nav-list">
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="#!">О компании</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="#!">Услуги</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="#!">Галерея</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="#!">Контакты</a>
+            </li>
+          </ul>
         </div>
       </header>
 
@@ -169,48 +197,52 @@
               </div>
               <div class="swiper-slide banner-content">
                 <img
-                class="banner-img"
-                src="./assests/img/Rectangle-2@1x-2.jpg"
-                srcset="
-                  ./assests/img/Rectangle-2@1x-2.jpg 1x,
-                  ./assests/img/Rectangle-2@2x-2.jpg 2x
-                "
-                alt="banner image"
-              />
-              <h2 class="banner-title">Аккредитованная лаборатория</h2>
-              <button
-                class="banner-button"
-                data-bs-toggle="modal"
-                href="#exampleModalToggle"
-                role="button"
-              >
-                Подробнее
-              </button>
+                  class="banner-img"
+                  src="./assests/img/Rectangle-2@1x-2.jpg"
+                  srcset="
+                    ./assests/img/Rectangle-2@1x-2.jpg 1x,
+                    ./assests/img/Rectangle-2@2x-2.jpg 2x
+                  "
+                  alt="banner image"
+                />
+                <h2 class="banner-title">Аккредитованная лаборатория</h2>
+                <button
+                  class="banner-button"
+                  data-bs-toggle="modal"
+                  href="#exampleModalToggle"
+                  role="button"
+                >
+                  Подробнее
+                </button>
               </div>
               <div class="swiper-slide banner-content">
                 <img
-                class="banner-img"
-                src="./assests/img/Rectangle-3@1x.jpg"
-                srcset="
-                  ./assests/img/Rectangle-3@1x.jpg 1x,
-                  ./assests/img/Rectangle-3@2x.jpg 2x
-                "
-                alt="banner image"
-              />
-              <h2 class="banner-title">Геология и Гидрогеология</h2>
-              <button
-                class="btn-w banner-button"
-                data-bs-toggle="modal"
-                href="#exampleModalToggle"
-                role="button"
-              >
-                Подробнее
-              </button>
+                  class="banner-img"
+                  src="./assests/img/Rectangle-3@1x.jpg"
+                  srcset="
+                    ./assests/img/Rectangle-3@1x.jpg 1x,
+                    ./assests/img/Rectangle-3@2x.jpg 2x
+                  "
+                  alt="banner image"
+                />
+                <h2 class="banner-title">Геология и Гидрогеология</h2>
+                <button
+                  class="btn-w banner-button"
+                  data-bs-toggle="modal"
+                  href="#exampleModalToggle"
+                  role="button"
+                >
+                  Подробнее
+                </button>
               </div>
             </div>
 
-            <div class="swiper-button-next banner-next"><i class="fa-solid fa-arrow-right"></i></div>
-            <div class="swiper-button-prev banner-prev"><i class="fa-solid fa-arrow-left"></i></div>
+            <div class="swiper-button-next banner-next">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="swiper-button-prev banner-prev">
+              <i class="fa-solid fa-arrow-left"></i>
+            </div>
           </div>
         </div>
         <!-- Banner Modal One -->
@@ -270,11 +302,14 @@
                   Связаться с нами
                 </button>
                 <button
-                  class="btn-w"
+                  class="btn-w modal-close__first"
                   data-bs-target="#exampleModalToggle2"
                   data-bs-toggle="modal"
                 >
                   Подать заявку
+                </button>
+                <button class="modal-close__second btn-w" type="button" data-bs-dismiss="modal">
+                  Закрыть
                 </button>
               </div>
               <img
@@ -397,7 +432,15 @@
             <!-- Main right -->
             <div class="main-right col-lg-6 col-md-12">
               <h2 class="main-title">О компании</h2>
-              <img class="main-img__second" src="./assests/img/Main-second.jpg" srcset="./assests/img/Main-second.jpg 1x, ./assests/img/Main-second@2x.jpg 2x" alt="">
+              <img
+                class="main-img__second"
+                src="./assests/img/Main-second.jpg"
+                srcset="
+                  ./assests/img/Main-second.jpg    1x,
+                  ./assests/img/Main-second@2x.jpg 2x
+                "
+                alt=""
+              />
               <p class="main-subtitle">
                 Аккредитованный центр по сертификации продукции при ООО "TOPFIN
                 RESULT" создан в 2014 году. Осуществляет сертификацию
@@ -2155,7 +2198,7 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
- 
+
         breakpoints: {
           0: {
             slidesPerView: 1,
@@ -2191,7 +2234,7 @@
             slidesPerView: 3,
           },
           768: {
-            slidesPerView: 3,
+            slidesPerView: 6,
           },
         },
         grid: {
