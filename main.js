@@ -48,11 +48,13 @@ elSelectFactory.addEventListener("click", () => {
 })
  
 // Hammburger
-
+const elNavMenu = document.querySelector(".nav-right");
 document.querySelector(".hamburger").addEventListener("click", ()=> {
-  document.querySelector(".nav-media").classList.toggle("hamburger-active")
+  elNavMenu.classList.toggle("nav-media")
 })
- 
+window.addEventListener("scroll", () => {
+  elNavMenu.classList.remove("nav-media")
+})
 
 
 
