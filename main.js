@@ -9,10 +9,6 @@ document.querySelectorAll(".banner-content").forEach((content) => {
     elPopulTitle.textContent = elContentTitle.textContent
   };
 });
-
-
-
-
   
 // Offer Modal Start
 
